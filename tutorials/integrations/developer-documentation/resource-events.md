@@ -10,10 +10,10 @@ When a user presses or releases their PTT key, the following event can be used:
 
 ```lua
 -- Event sent from Sonoran Radio
-TriggerEvent('SonoranRadio::API:ToggleTalking', toggle, inVeh)
+TriggerEvent('SonoranRadio::API:Talking', toggle, inVeh)
 
 -- Event listener in a custom script
-AddEventHandler('SonoranRadio::API:ToggleTalking', function(toggle, inVeh) 
+AddEventHandler('SonoranRadio::API:Talking', function(toggle, inVeh) 
   print(toggle) -- Boolean (Are the talking?)
   print(inVeh) -- Boolean (Are they in a vehicle)
 end)
